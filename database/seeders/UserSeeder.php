@@ -24,7 +24,7 @@ class UserSeeder extends Seeder
         foreach ($mahasiswas as $mahasiswa) {
             User::create([
                 'name' => $mahasiswa->nama_lengkap,
-                'email' => $mahasiswa->email,
+                'email' => $mahasiswa->email, 
                 'password' => Hash::make('mahasiswa123'),
                 'role' => 'mahasiswa',
                 'mahasiswa_id' => $mahasiswa->id,
